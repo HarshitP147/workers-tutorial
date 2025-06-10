@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./src/index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Workers</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="input-container">
+            <label for="numberInput">Enter a number:</label>
+            <input type="number" id="numberInput" />
+        </div>
+
+        <div class="button-container">
+            <button id="calculateButton">Calculate</button>
+        </div>
+
+        <div class="result-container">
+
+            <div class="factorial-result">
+                <!-- we show the factorial of that number -->
+                <span>Factorial of the number</span>
+                <p id="factorialResult"></p>
+                <span id="factDone">Fibonacci:✅</span>
+            </div>
+
+            <div class="fibonacci-result">
+                <!-- we show the fibonacci of that number -->
+                <span>Fibonacci sequence at that number</span>
+                <p id="fibonacciResult"></p>
+                <span id="fibDone">Factorial:✅</span>
+            </div>
+
+        </div>
+
+        <button id="reset">Reset</button>
+        
+        <div class="choice-container">
+            <label for="checkbox">Use Workers:</label>
+            <input type="checkbox" id="workerChoice" />
+        </div>
+
+        <div>
+            <!-- we show a small animation of a ball bouncing around -->
+            <div class="animation-container">
+                <canvas id="animationCanvas"></canvas>
+            </div>
+        </div>
+
+        <div class="box"></div>
+
+    </div>
+</body>
+
+</html>
